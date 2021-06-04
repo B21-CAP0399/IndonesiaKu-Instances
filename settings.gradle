@@ -1,0 +1,2 @@
+rootProject.name = "IndonesiaKu - Instances"
+include ':app'
