@@ -12,13 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IndonesiaKuInstances">
-        <activity android:name=".request_result.RequestPermissionResultActivity"></activity>
+        <activity android:name=".request_result.RequestPermissionResultActivity"/>
         <activity
             android:name=".login.LoginActivity"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+            android:theme="@style/Theme.IndonesiaKuInstances.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

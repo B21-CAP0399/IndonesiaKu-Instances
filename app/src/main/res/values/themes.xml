@@ -14,4 +14,9 @@
         <!-- Customize your theme here. -->
         <item name="background">@color/foreground</item>
     </style>
+
+    <style name="Theme.IndonesiaKuInstances.NoActionBar" parent="Theme.IndonesiaKuInstances">
+        <item name = "android:windowActionBar">false</item>
+        <item name = "android:windowNoTitle">true</item>
+    </style>
 </resources>
