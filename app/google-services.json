@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "384631345250",
+    "project_id": "indonesiaku-315206",
+    "storage_bucket": "indonesiaku-315206.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384631345250:android:58bd159254f7d7d28a813b",
+        "android_client_info": {
+          "package_name": "com.bangkit.idku.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384631345250-44ia3gsfv5jh215tu1oe65go35iuc2n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgp_xGr4XmjX8fmjYxvffmdGzNfmacUts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384631345250-44ia3gsfv5jh215tu1oe65go35iuc2n1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384631345250:android:2b4c909c03897b628a813b",
+        "android_client_info": {
+          "package_name": "com.bangkit.idku.instances"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384631345250-44ia3gsfv5jh215tu1oe65go35iuc2n1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgp_xGr4XmjX8fmjYxvffmdGzNfmacUts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384631345250-44ia3gsfv5jh215tu1oe65go35iuc2n1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
