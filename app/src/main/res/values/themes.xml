@@ -16,7 +16,7 @@
     </style>
 
     <style name="Theme.IndonesiaKuInstances.NoActionBar" parent="Theme.IndonesiaKuInstances">
-        <item name = "android:windowActionBar">false</item>
-        <item name = "android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 </resources>
