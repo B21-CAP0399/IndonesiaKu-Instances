@@ -8,7 +8,6 @@ import com.google.firebase.functions.FirebaseFunctions
 import timber.log.Timber
 import javax.inject.Inject
 
-
 class IdentityRepositoryImpl @Inject constructor(
     private val functions: FirebaseFunctions,
     private val db: FirebaseFirestore,
@@ -20,12 +19,11 @@ class IdentityRepositoryImpl @Inject constructor(
         )
 
         return functions
-            .getHttpsCallable("addRequest")
+            .getHttpsCallable("requestAccessPermission")
             .call(data)
             .continueWith { task ->
                 val result = task.result?.data
                 Timber.d(result.toString())
-                result
             }
     }
 
@@ -36,9 +34,10 @@ class IdentityRepositoryImpl @Inject constructor(
             .get()
 
 
-    override fun getIdentity(id: String) {
-        TODO("Not yet implemented")
-    }
+    override fun getIdentity(id: String) =
+        db.collection(citizenID)
+            .document(id)
+            .get()
 
     override fun getOngoingRequests() =
         db.collection(accessPermission)
@@ -52,6 +51,7 @@ class IdentityRepositoryImpl @Inject constructor(
             .get()
 
     companion object {
-        private val accessPermission = "access_permission"
+        private const val accessPermission = "access_permission"
+        private const val citizenID = "citizen_identity"
     }
 }

@@ -6,7 +6,7 @@ import com.google.firebase.firestore.QuerySnapshot
 
 interface IdentityRepository {
     fun getAuthorizedAccess(): Task<QuerySnapshot>
-    fun getIdentity(id: String)
+    fun getIdentity(id: String): Task<DocumentSnapshot>
     fun getOngoingRequests(): Task<QuerySnapshot>
     fun getOngoingRequest(id: String): Task<DocumentSnapshot>
     fun addRequest(requestedData: List<String>): Task<Unit>

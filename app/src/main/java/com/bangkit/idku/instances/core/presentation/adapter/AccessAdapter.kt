@@ -8,7 +8,9 @@ import com.bangkit.idku.instances.R
 import com.bangkit.idku.instances.core.domain.model.AccessPermission
 import com.bangkit.idku.instances.databinding.LayoutItemAccessBinding
 
-class AccessAdapter : RecyclerView.Adapter<AccessAdapter.CardViewHolder>() {
+class AccessAdapter(
+    private val onItemClick: () -> Unit
+) : RecyclerView.Adapter<AccessAdapter.CardViewHolder>() {
     private val list: ArrayList<AccessPermission> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder =

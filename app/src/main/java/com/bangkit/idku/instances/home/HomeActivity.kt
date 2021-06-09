@@ -1,12 +1,11 @@
 package com.bangkit.idku.instances.home
 
 import android.os.Bundle
+import android.widget.Toast
+import android.widget.Toast.LENGTH_SHORT
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bangkit.idku.instances.databinding.ActivityHomeBinding
-import com.google.android.gms.tasks.Task
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.functions.FirebaseFunctions
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 
@@ -28,6 +27,14 @@ class HomeActivity : AppCompatActivity() {
 
             fabAdd.setOnClickListener {
                 viewModel.addRequest(arrayListOf("ktp"))
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            Toast.makeText(this@HomeActivity, task.result.toString(), LENGTH_SHORT)
+                                .show()
+                        } else {
+                            Timber.e("error ")
+                        }
+                    }
             }
         }
 
